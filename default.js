@@ -2,10 +2,12 @@ module.exports = {
     rules: {
         //"dot-notation": "off",
         //"eol-last": "off",
+        "no-unused-vars": "warn",
         "prefer-const": "warn",
+        "no-duplicate-imports": "error",   
+        
         "space-before-function-paren": ["error", {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
         "semi": ["warn", "never"],
-        "no-duplicate-imports": "error",   
         "comma-spacing": ["error", { "before": false, "after": true }],
         "quotes": ["error", "single", { "allowTemplateLiterals": true }],
         "indent": ["error", 4],
