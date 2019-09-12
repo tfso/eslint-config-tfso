@@ -8,8 +8,9 @@
         "url": "git+https://github.com/tfso/eslint-config-tfso.git"
     },
     "peerDependencies": {
-        "eslint-config-react-app": "^5",
         "eslint": "^6",
+        "eslint-config-react-app": "^5",
+        "eslint-plugin-react": "^7",
         "@typescript-eslint/eslint-plugin": "^2",
         "@typescript-eslint/parser": "^2",
         "typescript": "^3"
