@@ -29,7 +29,6 @@ module.exports = {
         "@typescript-eslint/prefer-interface": "off",
         
         "@typescript-eslint/no-use-before-define": [ "warn", { "functions": false, "classes": false } ],
-
         "@typescript-eslint/type-annotation-spacing": ["error", { "before": false, "after": true, "overrides": { "arrow": { "before": true, "after": true }} }],
 
         "indent": "off",

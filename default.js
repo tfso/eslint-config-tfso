@@ -19,7 +19,7 @@ module.exports = {
         "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
         "space-in-parens": ["error", "never"],
         "space-before-blocks": ["warn", "always"],
-        "brace-style": ["error"],
+        "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
         "object-curly-spacing": ["warn", "always", { "arraysInObjects": false }],
         "keyword-spacing": [
             "warn",
