@@ -4,6 +4,7 @@ module.exports = {
         //"eol-last": "off",
         "no-unused-vars": "warn",
         "prefer-const": "warn",
+        "prefer-spread": "warn",
         "no-duplicate-imports": "error",
 
         "space-before-function-paren": ["error", {"anonymous": "never", "named": "never", "asyncArrow": "always"}],

@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-tfso",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "EsLint configuration for 24SevenOffice",
     "main": "backend.js",
     "repository": {
