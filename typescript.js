@@ -21,7 +21,9 @@ module.exports = {
     },
     rules: {
         ...rules,
-        
+
+        "no-unused-vars": "off",
+
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-parameter-properties": "off",
@@ -29,7 +31,7 @@ module.exports = {
         "@typescript-eslint/prefer-interface": "off",
         
         "@typescript-eslint/no-use-before-define": [ "warn", { "functions": false, "classes": false } ],
-        
+
         "@typescript-eslint/member-delimiter-style": ["error", { "multiline": { "delimiter": "none" }, "singleline": { "delimiter": "comma" } }],
         "@typescript-eslint/type-annotation-spacing": ["error", { "before": false, "after": true, "overrides": { "arrow": { "before": true, "after": true }} }],
 
