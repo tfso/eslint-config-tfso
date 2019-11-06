@@ -30,7 +30,7 @@ module.exports = {
         "@typescript-eslint/interface-name-prefix": "off",
         "@typescript-eslint/prefer-interface": "off",
         
-        "@typescript-eslint/no-use-before-define": [ "warn", { "functions": false, "classes": false } ],
+        "@typescript-eslint/no-use-before-define": [ "error", { "functions": false, "classes": false, "variables": false, "typedefs": false } ],
 
         "@typescript-eslint/member-delimiter-style": ["error", { "multiline": { "delimiter": "none" }, "singleline": { "delimiter": "comma" } }],
         "@typescript-eslint/type-annotation-spacing": ["error", { "before": false, "after": true, "overrides": { "arrow": { "before": true, "after": true }} }],
