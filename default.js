@@ -23,14 +23,16 @@ module.exports = {
         "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
         "object-curly-spacing": ["warn", "always", { "arraysInObjects": false }],
         "no-multiple-empty-lines": ["error", { "max": 1 }],
-        "keyword-spacing": ["error", 
-            { 
-                "overrides": {
-                    "if": { "after": false },
-                    "for": { "after": false },
-                    "while": { "after": false }
-                } 
+        "keyword-spacing": ["error", {
+            "after": true,
+            "overrides": {
+                "if": { "after": false },
+                "else": { "before": false, "after": false },
+                "for": { "after": false },
+                "while": { "after": false },
+                "catch": { "before": false, "after": false },
+                "finally": { "before": false, "after": false },
             }
-        ]
+        }]
     }
 }
