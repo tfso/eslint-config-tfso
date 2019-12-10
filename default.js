@@ -22,10 +22,14 @@ module.exports = {
         "space-before-blocks": ["warn", "always"],
         "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
         "object-curly-spacing": ["warn", "always", { "arraysInObjects": false }],
-        "keyword-spacing": [
-            "warn",
-            {
-                "after": true
+        "no-multiple-empty-lines": ["error", { "max": 1 }],
+        "keyword-spacing": ["error", 
+            { 
+                "overrides": {
+                    "if": { "after": false },
+                    "for": { "after": false },
+                    "while": { "after": false }
+                } 
             }
         ]
     }
