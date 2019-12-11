@@ -1,12 +1,9 @@
 module.exports = {
     rules: {
-        //"dot-notation": "off",
-        //"eol-last": "off",
         "no-unused-vars": "warn",
         "prefer-const": "warn",
         "prefer-spread": "warn",
         "no-duplicate-imports": "error",
-
         "space-before-function-paren": ["error", {"anonymous": "never", "named": "never", "asyncArrow": "always"}],
         "semi": ["warn", "never"],
         "comma-spacing": ["error", { "before": false, "after": true }],
@@ -22,7 +19,6 @@ module.exports = {
         "space-before-blocks": ["warn", "always"],
         "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
         "object-curly-spacing": ["warn", "always", { "arraysInObjects": false }],
-        "no-multiple-empty-lines": ["error", { "max": 1 }],
         "keyword-spacing": ["error", {
             "after": true,
             "overrides": {
