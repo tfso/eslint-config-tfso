@@ -28,7 +28,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-parameter-properties": "off",
         "@typescript-eslint/interface-name-prefix": "off",
-        "@typescript-eslint/prefer-interface": "off",
+        "@typescript-eslint/consistent-type-definitions": "off",
         
         "@typescript-eslint/no-use-before-define": [ "warn", { "functions": false, "classes": false } ],
 
@@ -43,7 +43,7 @@ module.exports = {
             files: ['test/**/*.ts'],
             rules: {
                 '@typescript-eslint/no-non-null-assertion': 'off',
-                '@typescript-eslint/no-object-literal-type-assertion': 'off',
+                '@typescript-eslint/consistent-type-assertions': 'off',
             }
         }
     ]
