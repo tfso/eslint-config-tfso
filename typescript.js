@@ -40,10 +40,13 @@ module.exports = {
     },
     overrides: [
         {
-            files: ['test/**/*.ts'],
+            files: ["test/**/*.ts", "__tests__/**/*.ts"],
             rules: {
-                '@typescript-eslint/no-non-null-assertion': 'off',
-                '@typescript-eslint/consistent-type-assertions': 'off',
+                "@typescript-eslint/no-non-null-assertion": "off",
+                "@typescript-eslint/consistent-type-assertions": ["error", {
+                    "assertionStyle": "as",
+                    "objectLiteralTypeAssertions": "allow"
+                }],
             }
         }
     ]
