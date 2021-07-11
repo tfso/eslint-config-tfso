@@ -36,6 +36,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install
+        run: npm ci
+
       # Creates tags and updates changelog based on change changelog-config.js settings
       - name: Conventional Changelog Action
         id: changelog
