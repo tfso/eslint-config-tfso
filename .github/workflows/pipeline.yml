@@ -4,29 +4,7 @@ on:
     branches: [master]
   pull_request:
 
-jobs: 
-  publish-dev:
-    if: ${{ github.event_name == 'pull_request' }} 
-    runs-on: ubuntu-latest
-    permissions: 
-      packages: write
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@tfso'
-
-      - name: Publish prerelease to GitHub Packages
-        run: |
-          npm version prerelease --preid=branch.${{github.run_number}} --no-git-tag-version
-          npm publish --verbose --tag dev
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+jobs:     
   changelog:
     if: ${{ github.ref == 'refs/heads/master' }} 
     runs-on: ubuntu-latest
@@ -50,24 +28,3 @@ jobs:
       - name: Fail if tagging is skipped
         if: ${{ steps.changelog.outputs.skipped == 'true' }}
         run: exit 1
-
-  publish-prod:
-    if: ${{ github.ref == 'refs/heads/master' }}
-    needs: changelog
-    runs-on: ubuntu-latest
-    permissions: 
-      packages: write
-    
-    steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@tfso'
-          
-      - name: Publish to Github Packages
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
