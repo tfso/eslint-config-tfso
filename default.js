@@ -2,7 +2,7 @@ module.exports = {
     rules: {
         //"dot-notation": "off",
         //"eol-last": "off",
-        "no-unused-vars": "warn",
+        "no-unused-vars": "off",
         "prefer-const": "warn",
         "prefer-spread": "warn",
         "no-duplicate-imports": "error",
