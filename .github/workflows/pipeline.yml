@@ -20,6 +20,9 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@tfso'
 
+      - name: Fix package name
+        run: sed -i -e 's/"eslint-config-tfso"/"\@tfso\/eslint-config"/g' package.json
+
       - name: Publish prerelease to GitHub Packages
         run: |
           npm version prerelease --preid=branch.${{github.run_number}} --no-git-tag-version
@@ -67,6 +70,9 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@tfso'
           
+      - name: Fix package name
+        run: sed -i -e 's/"eslint-config-tfso"/"\@tfso\/eslint-config"/g' package.json
+
       - name: Publish to Github Packages
         run: npm publish
         env:
