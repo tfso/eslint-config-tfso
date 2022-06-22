@@ -4,11 +4,11 @@
   "description": "EsLint configuration for 24SevenOffice",
   "main": "backend.js",
   "repository": "https://github.com/tfso/eslint-config-tfso",
-  "peerDependencies": {
+  "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^2 || ^3 || ^4 || ^5",
     "@typescript-eslint/parser": "^2 || ^3 || ^4 || ^5",
-    "eslint": "^6 || ^7",
-    "eslint-config-react-app": "^5 || ^6",
+    "eslint": "^6 || ^7 || ^8",
+    "eslint-config-react-app": "^5 || ^6 || ^7",
     "eslint-plugin-react": "^7",
     "typescript": "^3 || ^4"
   }
