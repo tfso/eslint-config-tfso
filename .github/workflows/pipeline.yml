@@ -26,7 +26,7 @@ jobs:
       - name: Publish prerelease to GitHub Packages
         run: |
           npm version prerelease --preid=branch-${{ github.event.number }}.${{ github.run_number }} --no-git-tag-version
-          npm publish --verbose --tag dev
+          npm publish --verbose --tag next
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
