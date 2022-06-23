@@ -1,3 +1,10 @@
+### [1.1.3](https://github.com/tfso/eslint-config-tfso/compare/v1.1.2...v1.1.3) (2022-06-23)
+
+
+### Bug Fixes
+
+* conventional commit check for PR ([c043332](https://github.com/tfso/eslint-config-tfso/commit/c04333222952cd34028054bc1326694c28cc16f3))
+
 ### [1.1.2](https://github.com/tfso/eslint-config-tfso/compare/v1.1.1...v1.1.2) (2022-06-23)
 
 
