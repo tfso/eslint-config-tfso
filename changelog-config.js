@@ -16,6 +16,6 @@ module.exports = config({
         {type: "build", section:"Build System", "hidden": true},
         {type: "ci", section:"CI", "hidden":true}
         ],
-    issuePrefixes: ["COLAB-", "ERP-", "BUGS-"],
+    issuePrefixes: ["COLAB-", "ERP-", "BUGS-", "ROCKET-", "PAPI-"],
     issueUrlFormat: "https://24so.atlassian.net/browse/{{prefix}}{{id}}"
 })
