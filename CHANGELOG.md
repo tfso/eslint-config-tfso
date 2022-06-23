@@ -1,3 +1,10 @@
+### [1.1.2](https://github.com/tfso/eslint-config-tfso/compare/v1.1.1...v1.1.2) (2022-06-23)
+
+
+### Bug Fixes
+
+* description naming ([ed7e183](https://github.com/tfso/eslint-config-tfso/commit/ed7e183ff33fbc0a6a6b981fb04b9497fe4ac572))
+
 ### [1.1.1](https://github.com/tfso/eslint-config-tfso/compare/v1.1.0...v1.1.1) (2022-06-23)
 
 
