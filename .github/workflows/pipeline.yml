@@ -20,6 +20,18 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@tfso'
 
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3
+        with: 
+          skip-commit: true
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          config-file-path: ./changelog-config.js
+      
+      - name: Fail if tagging is skipped
+        if: ${{ steps.changelog.outputs.skipped == 'true' }}
+        run: exit 1
+
       - name: Fix package name
         run: sed -i -e 's/"eslint-config-tfso"/"\@tfso\/eslint-config"/g' package.json
 
