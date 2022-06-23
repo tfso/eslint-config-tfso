@@ -25,6 +25,8 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with: 
           git-push: false
+          skip-commit: true
+          skip-git-pull: true
           github-token: ${{secrets.GITHUB_TOKEN}}
           config-file-path: ./changelog-config.js
       
