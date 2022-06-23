@@ -13,12 +13,31 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v2
         with:
           node-version: '14.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@tfso'
+
+      - name: Install
+        run: npm install conventional-changelog-conventionalcommits@^4.6.0
+
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3
+        with: 
+          git-push: false
+          skip-commit: true
+          skip-git-pull: true
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          config-file-path: ./changelog-config.js
+      
+      - name: Fail if tagging is skipped
+        if: ${{ steps.changelog.outputs.skipped == 'true' }}
+        run: exit 1
 
       - name: Fix package name
         run: sed -i -e 's/"eslint-config-tfso"/"\@tfso\/eslint-config"/g' package.json
