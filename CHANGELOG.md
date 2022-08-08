@@ -1,3 +1,12 @@
+### [1.1.4](https://github.com/tfso/eslint-config-tfso/compare/v1.1.2...v1.1.4) (2022-08-08)
+
+
+### Bug Fixes
+
+* added mocha rules ([120a32f](https://github.com/tfso/eslint-config-tfso/commit/120a32fd5988e5612db24f0d05be086b3ff92caa))
+* bumping version ([bac98bf](https://github.com/tfso/eslint-config-tfso/commit/bac98bfd9859ca48b34c71b848f092f2e6ee44b3))
+* conventional commit check for PR ([c043332](https://github.com/tfso/eslint-config-tfso/commit/c04333222952cd34028054bc1326694c28cc16f3))
+
 ### [1.1.2](https://github.com/tfso/eslint-config-tfso/compare/v1.1.1...v1.1.2) (2022-06-23)
 
 
