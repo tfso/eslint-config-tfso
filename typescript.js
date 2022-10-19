@@ -46,6 +46,7 @@ module.exports = {
                     "assertionStyle": "as",
                     "objectLiteralTypeAssertions": "allow"
                 }],
+                "@typescript-eslint/explicit-function-return-type": "error"
             }
         }
     ]
