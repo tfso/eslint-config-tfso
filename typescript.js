@@ -23,7 +23,7 @@ module.exports = {
         ...rules,
 
         "no-unused-vars": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-function-return-type": "error",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-parameter-properties": "off",
         "@typescript-eslint/interface-name-prefix": "off",
@@ -46,7 +46,6 @@ module.exports = {
                     "assertionStyle": "as",
                     "objectLiteralTypeAssertions": "allow"
                 }],
-                "@typescript-eslint/explicit-function-return-type": "error"
             }
         }
     ]
