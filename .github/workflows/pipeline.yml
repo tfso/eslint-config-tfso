@@ -59,6 +59,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with: 
+          skip-on-empty: 'false'
           github-token: ${{secrets.GITHUB_TOKEN}}
           config-file-path: ./changelog-config.js
       
