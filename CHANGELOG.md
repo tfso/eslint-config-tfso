@@ -1,6 +1,5 @@
 ### [1.1.5](https://github.com/tfso/eslint-config-tfso/compare/v1.1.2...v1.1.5) (2024-01-17)
 
-
 ### Bug Fixes
 
 * added mocha rules ([120a32f](https://github.com/tfso/eslint-config-tfso/commit/120a32fd5988e5612db24f0d05be086b3ff92caa))
@@ -9,6 +8,13 @@
 
 ### [1.1.2](https://github.com/tfso/eslint-config-tfso/compare/v1.1.1...v1.1.2) (2022-06-23)
 
+### Bug Fixes
+
+### [1.1.3](https://github.com/tfso/eslint-config-tfso/compare/v1.1.2...v1.1.3) (2022-10-01)
+
+### Bug Fixes
+
+### [1.1.2](https://github.com/tfso/eslint-config-tfso/compare/v1.1.1...v1.1.2) (2022-06-23)
 
 ### Bug Fixes
 
@@ -34,4 +40,3 @@
 ### Bug Fixes
 
 * added ci/cd with changelog and package publishing (#4) ([01bddab](https://github.com/tfso/eslint-config-tfso/commit/01bddab96320b80d6a5b8096b03c89bc4818deaf))
-
