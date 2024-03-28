@@ -1,3 +1,5 @@
+### [1.1.7](https://github.com/tfso/eslint-config-tfso/compare/v1.1.6...v1.1.7) (2024-03-28)
+
 ### [1.1.6](https://github.com/tfso/eslint-config-tfso/compare/v1.1.5...v1.1.6) (2024-01-17)
 
 ### [1.1.5](https://github.com/tfso/eslint-config-tfso/compare/v1.1.2...v1.1.5) (2024-01-17)
@@ -22,11 +24,4 @@
 ### Bug Fixes
 
 * adding jira issue prefixes for new teams ([cbd82b9](https://github.com/tfso/eslint-config-tfso/commit/cbd82b99188b1bcd7774e7b49a33dd5b8c3e9404))
-
-## [1.1.0](https://github.com/tfso/eslint-config-tfso/compare/v1.0.3...v1.1.0) (2022-05-05)
-
-
-### Features
-
-* Publish new version ([4a532a0](https://github.com/tfso/eslint-config-tfso/commit/4a532a09e13996811e2efe95ef389653336138bb))
 
